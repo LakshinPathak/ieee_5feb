@@ -110,6 +110,46 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<script>
+
+    function downloadPdf() {
+      // Replace 'YOUR_GOOGLE_DRIVE_PDF_LINK' with your actual Google Drive PDF link
+      var pdfUrl = 'https://drive.google.com/file/d/1WdT0ViZKMyFRsg8ckCxrwhq2tJlwzUiu/view?usp=sharing';
+      
+      // Use anchor tag to initiate download
+      var a = document.createElement('a');
+      a.href = pdfUrl;
+      a.download = 'Sampark_Schedule.pdf'; // specify the file name here
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+
+    function downloadPdf2() {
+      // Replace 'YOUR_GOOGLE_DRIVE_PDF_LINK' with your actual Google Drive PDF link
+      var pdfUrl = 'https://drive.google.com/file/d/15ZtUSJymVsJXFf3fCaMe5Pn3QB0QHBKy/view?usp=sharing';
+      
+      // Use anchor tag to initiate download
+      var a = document.createElement('a');
+      a.href = pdfUrl;
+      a.download = 'Project_Competetion.pdf'; // specify the file name here
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+
+
+
+   
+</script>
+
+
+
   </head>
 
   <body>
@@ -221,6 +261,21 @@
               >
                 Register Now
               </a>
+
+
+           
+
+            <button onclick="downloadPdf()"
+            class="text-slate-50 hover:text-slate-100 bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 me-2 mb-2">
+            Download Schedule</button>
+              
+            
+            <button onclick="downloadPdf2()"
+            class="text-slate-50 hover:text-slate-100 bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 me-2 mb-2">
+            Project Competition Guidelines</button>
+
+
+
               <a
                 href="https://www.instagram.com/sampark_.24"
                 type="button"
@@ -240,6 +295,8 @@
                 </svg>
                 Follow Us
               </a>
+
+
             </div>
           </div>
           <div
@@ -579,6 +636,7 @@
           <br />
 
           <p>All rights reserved.</p>
+          <p>Developed by Lakshin Pathak and Jaival Chhag</p>
         </div>
       </div>
     </footer>
